@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="css/styles.css" />
+<html>
+<body class="body">
+    <div class="square">
+        <div>
+            <form id="formular" onsubmit="showInput()">
+                <p class="textDate">
+                    D A Y
+                    <br />
+                    <input class="numbere" type="number" name="day" id="day" title="DD" placeholder="DD" max="31" min="1" required />
+                    <div class="error" id="errormz"></div>
+                </p>
+                <p class="textDate1">
+                    M O N T H
+                    <br />
+                    <input class="numbere" type="number" name="month" id="month" title="MM" placeholder="MM" max="12" min="1" required />
+                    <div class="error" id="errormx"></div>
+                </p>
+                <p class="textDate2">
+                    Y E A R
+                    <br />
+                    <input class="numbere" type="number" name="year" id="year" title="YY" placeholder="YYYY" max="2023" min="1900" required />
+                    <div class="error" id="errormy"></div>
+                </p>
+                <hr class="linie" />
+                <button type="submit" class="circle" id="vutonu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </button>
+            </form>
+            <div class="textjos">
+                <div class="inline"><p class="numberov" id="anu">--</p>years</div>
+                <div class="inline"><p class="numberov" id="luna">--</p>months</div>
+                <div class="inline"><p class="numberov" id="ziua">--</p>days</div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/date.js"></script>
+</body>
+</html>
